@@ -4,9 +4,8 @@ body{
     margin: 40px auto;
     max-width: 800px;
     line-height: 1.6em;
-    <!-- font-size: 18px; --> 
-    font-family: 'Droid Serif';font-size: 22px;
-  <!-- font-family: courier new; --> 
+    font-size: 18px;
+    font-family: courier new;
     padding: 0;
 
 }
