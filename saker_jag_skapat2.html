@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8"/>
     <style>
+        body {
+            color: #444;
+            background-color: #EEE;
+            margin: 40px auto;
+            max-width: 800px;
+            line-height: 1.6em;
+            font-size: 18px;
+            font-family: courier new;
+            padding: 0;
+        }
+
         .mosaic-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 10px;  /* Reduced gap to fit within 800px max-width */
+            margin: 20px 0;
         }
 
         .mosaic-item {
             position: relative;
             width: 100%;
-            padding-bottom: 75%; /* 4:3 Aspect Ratio */
-            overflow: hidden;
+            padding-bottom: 75%;
         }
 
         .mosaic-item img {
@@ -24,20 +32,15 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s ease;
         }
 
-        .mosaic-item:hover img {
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .mosaic-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 400px) {
             .mosaic-grid {
                 grid-template-columns: 1fr;
             }
@@ -48,9 +51,7 @@
     <h1>Saker jag skapat</h1>
     <p>Möbler och annat</p>
 
-    <!-- Image Mosaic Grid -->
     <div class="mosaic-grid">
-        <!-- Four copies of the same image -->
         <div class="mosaic-item">
             <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 1">
         </div>
