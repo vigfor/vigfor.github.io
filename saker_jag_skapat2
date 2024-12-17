@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        .mosaic-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mosaic-item {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%; /* 4:3 Aspect Ratio */
+            overflow: hidden;
+        }
+
+        .mosaic-item img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .mosaic-item:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .mosaic-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mosaic-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Saker jag skapat</h1>
+    <p>Möbler och annat</p>
+
+    <!-- Image Mosaic Grid -->
+    <div class="mosaic-grid">
+        <!-- Four copies of the same image -->
+        <div class="mosaic-item">
+            <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 1">
+        </div>
+        <div class="mosaic-item">
+            <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 2">
+        </div>
+        <div class="mosaic-item">
+            <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 3">
+        </div>
+        <div class="mosaic-item">
+            <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 4">
+        </div>
+    </div>
+
+    <h4><a href="index.html">Tillbaka</a></h4>
+    <p>Updated 04-12-2024</p>
+</body>
+</html>
