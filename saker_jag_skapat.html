@@ -1,72 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"/>
-    <style>
-        body {
-            color: #444;
-            background-color: #EEE;
-            margin: 40px auto;
-            max-width: 800px;
-            line-height: 1.6em;
-            font-size: 18px;
-            font-family: courier new;
-            padding: 0;
-        }
-
-        .mosaic-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;  /* Reduced gap to fit within 800px max-width */
-            margin: 20px 0;
-        }
-
-        .mosaic-item {
-            position: relative;
-            width: 100%;
-            padding-bottom: 75%;
-        }
-
-        .mosaic-item img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        @media (max-width: 600px) {
-            .mosaic-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 400px) {
-            .mosaic-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<meta charset="UTF-8"/>
+<style>
+body {
+  color: #444;
+  background-color: #EEE;
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 1.6em;
+  font-size: 18px;
+  font-family: courier new;
+  padding: 0 20px;
+}
+.project {
+  margin-bottom: 40px;
+}
+.project img {
+  width: 100%;  /* Or your desired size */
+  height: 500%;
+  object-fit: cover; /* or 'contain' */
+}
+.project-text {
+  margin: 20px 0;
+}
+</style>
 </head>
 <body>
-    <h1>Saker jag skapat</h1>
-    <p>Möbler och annat</p>
+<h1>Saker jag skapat</h1>
 
-    <div class="mosaic-grid">
-        <div class="mosaic-item">
-            <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 1">
-        </div>
-        <div class="mosaic-item">
-            <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 2">
-        </div>
-        <div class="mosaic-item">
-            <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 3">
-        </div>
-        <div class="mosaic-item">
-            <img src="bilder/KHS_montana.jpeg" alt="Montana furniture 4">
-        </div>
-    </div>
+<div class="project">
+  <h2>Pall - Stockholm 2024-12-01</h2>
+  <img src="bilder/rasnickeri_pall.JPG" alt="Pall - Stockholm 2024-12-01">
+  <div class="project-text">
+    Byggd enligt Finn Ahlgrens principer om "Råsnickeri". Möbeln ska kunna byggas utan avancerade maskiner och på en begränsad yta. Materialet ska vara enkelt och gärna återanvänt. Någon ritning att utgå från behövs ej. Fokus ligger på processen snarare än resultatet. Enligt mig är det ett befriande arbetssätt. Ofta spenderar jag mycket tid på att fundera ut en perfekt konstruktion och i värsta fall ägnas så mycket tid åt planeringen att projektet aldrig blir av. "Done is better than perfect" helt enkelt. 
+  </div>
+</div>
 
-    <h4><a href="index.html">Tillbaka</a></h4>
-    <p>Updated 04-12-2024</p>
+<h4><a href="index.html">Tillbaka</a></h4>
+<p>Updated 04-12-2024</p>
 </body>
 </html>
